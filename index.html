@@ -1,24 +1,119 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<title>鼠标定位器 下载</title>
-<style>
-*{box-sizing:border-box;font-family:system-ui}
-body{background:#f5f7fa;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
-.download-card{background:#fff;padding:40px;border-radius:16px;box-shadow:0 2px 12px #00000015;text-align:center;width:420px}
-h1{font-size:24px;color:#222;margin:0 0 12px}
-p{color:#555;margin-bottom:30px}
-.download-btn{display:inline-block;padding:14px 32px;background:#2563eb;color:#fff;text-decoration:none;border-radius:10px;font-size:18px;font-weight:bold}
-.download-btn:hover{background:#1d4ed8}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标定位器 Mouse Locator | beta2.3</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:system-ui, -apple-system, sans-serif;
+        }
+        body{
+            background:linear-gradient(135deg,#2563eb,#4f46e5);
+            color:#fff;
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:20px;
+        }
+        .card{
+            background:#ffffff18;
+            backdrop-filter:blur(12px);
+            border-radius:20px;
+            padding:40px;
+            max-width:620px;
+            width:100%;
+            text-align:center;
+            border:1px solid #ffffff2b;
+            box-shadow:0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1{
+            font-size:2.4rem;
+            margin-bottom:10px;
+        }
+        .version{
+            font-size:1.1rem;
+            opacity:0.85;
+            margin-bottom:30px;
+        }
+        .desc{
+            line-height:1.7;
+            font-size:1.05rem;
+            margin-bottom:35px;
+            opacity:0.92;
+        }
+        .feature-list{
+            text-align:left;
+            margin:25px 0;
+            background:rgba(255,255,255,0.08);
+            padding:20px;
+            border-radius:14px;
+        }
+        .feature-list li{
+            margin:12px 0;
+            list-style:none;
+            padding-left:24px;
+            position:relative;
+        }
+        .feature-list li::before{
+            content:"✓";
+            position:absolute;
+            left:0;
+            color:#a5f3fc;
+            font-weight:bold;
+        }
+        .download-btn{
+            display:inline-block;
+            background:#fff;
+            color:#2563eb;
+            text-decoration:none;
+            font-weight:bold;
+            padding:16px 42px;
+            border-radius:50px;
+            font-size:1.15rem;
+            transition:0.25s ease;
+            box-shadow:0 4px 16px rgba(0,0,0,0.15);
+        }
+        .download-btn:hover{
+            transform:translateY(-3px);
+            box-shadow:0 7px 24px rgba(0,0,0,0.22);
+        }
+        .tip{
+            margin-top:24px;
+            font-size:0.9rem;
+            opacity:0.75;
+        }
+        footer{
+            margin-top:30px;
+            font-size:0.85rem;
+            opacity:0.6;
+        }
+    </style>
 </head>
 <body>
-<div class="download-card">
-<h1>鼠标定位器 安装包</h1>
-<p>点击下方按钮直接下载安装向导，无需注册登录</p>
-<!-- 后面替换Release的exe链接 -->
-<a href="https://github.com/ggyguuguy61/mouse-locator/releases/download/v1.0/mouse_setup.exe" class="download-btn">立即下载</a>
-</div>
+    <div class="card">
+        <h1>鼠标定位器 Mouse Locator</h1>
+        <div class="version">Beta 2.3</div>
+        <p class="desc">快速定位你的鼠标光标，适合大屏幕、多显示器用户。一键高亮鼠标位置，解决找不到光标的烦恼。</p>
+
+        <ul class="feature-list">
+            <li>一键高亮鼠标位置，醒目圆圈提示</li>
+            <li>自定义高亮颜色、大小、动画</li>
+            <li>后台轻量运行，占用资源极低</li>
+            <li>Windows系统，安装向导一键部署</li>
+        </ul>
+
+        <!-- 这里替换成你Release的下载地址 -->
+        <a class="download-btn" href="https://github.com/ggyguuguy61/mouse-locator/releases/download/v1.0/mouse_setup.exe">立即下载安装包</a>
+        <p class="tip">点击直接下载，无需注册、无需登录</p>
+
+        <footer>
+            开源免费 · Windows 平台
+        </footer>
+    </div>
 </body>
 </html>
