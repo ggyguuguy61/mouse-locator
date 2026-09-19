@@ -58,6 +58,9 @@ Download the installer directly from the website. No registration or login requi
  📄 Open Source Note
 Free and open-source tool for personal use only.
 Previous versions are not supported. This download is an installer. Installation may take a long time. Feel free to leave suggestions in the comments.
+
 注意：不支持英语！！
+
 Note: English is not supported!
+
 English is not supported!
