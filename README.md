@@ -67,7 +67,6 @@ pyinstaller --onefile --windowed --name MouseLocator --collect-all pystray main.
 
 - 本软件仅支持 **Windows**
 - 软件界面仅支持 **中文**
-- 暂不支持旧版本
 - 此下载为安装器，安装时间可能较长
 - 欢迎在 Issues 中提出建议
 
